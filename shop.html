@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop — LUNA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            LUNA
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+
+            <a href="cart.html">
+                Bag <span id="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- SHOP HEADER -->
+
+    <section class="shop-header">
+
+        <p>DISCOVER LUNA</p>
+
+        <h1>Shop All</h1>
+
+        <p class="shop-description">
+            Explore our collection of timeless pieces
+            designed for everyday style.
+        </p>
+
+    </section>
+
+
+    <!-- SHOP CONTROLS -->
+
+    <section class="shop-section">
+
+        <div class="shop-controls">
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+
+            <!-- CATEGORY -->
+
+            <select id="category-filter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="dresses">
+                    Dresses
+                </option>
+
+                <option value="tops">
+                    Tops
+                </option>
+
+                <option value="shoes">
+                    Shoes
+                </option>
+
+            </select>
+
+
+            <!-- PRICE -->
+
+            <select id="price-filter">
+
+                <option value="all">
+                    All Prices
+                </option>
+
+                <option value="50">
+                    Under $50
+                </option>
+
+                <option value="100">
+                    Under $100
+                </option>
+
+                <option value="150">
+                    Under $150
+                </option>
+
+            </select>
+
+
+            <!-- SORT -->
+
+            <select id="sort-filter">
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name: A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCT COUNT -->
+
+        <div class="shop-top">
+
+            <p>
+                <span id="product-count">0</span>
+                products
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            id="shop-products"
+            class="product-grid">
+        </div>
+
+
+        <!-- NO PRODUCTS -->
+
+        <div
+            id="no-products"
+            class="no-products"
+            style="display:none;">
+
+            <h2>No products found</h2>
+
+            <p>
+                Try changing your search or filters.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            LUNA
+        </div>
+
+        <p>
+            Modern essentials, made for you.
+        </p>
+
+        <p>
+            © 2026 LUNA. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+
+</body>
+
+</html>
